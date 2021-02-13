@@ -36,6 +36,16 @@ namespace Exercicio1
 
         }
 
+        public int getEstoque(){
+            return (int)this.quantidade;
+
+        }
+
+        public void setEstoque(int num){
+            this.quantidade -= num;
+            
+        }
+
         public static void addCarro(List<Carro> carros){
 
             Carro carro = new Carro();

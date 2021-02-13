@@ -79,8 +79,9 @@ namespace Exercicio1
             Console.WriteLine("Deseja comprar o carro? ");
             opcao = Console.ReadLine();
 
-            if(opcao == "Sim" && auxComprador.saldo >= carro.getPreco()){
+            if(opcao == "Sim" && auxComprador.saldo >= carro.getPreco() && carro.getEstoque() > 0){
                 auxComprador.saldo -= carro.getPreco();
+                carro.setEstoque(1);
                 auxComprador.garagem.Add(carro);
                 compradores.Add(auxComprador);
                 Console.WriteLine("Carro adquirido!");
@@ -90,6 +91,9 @@ namespace Exercicio1
 
             }else if(auxComprador.saldo < carro.getPreco()){
                 Console.WriteLine("Saldo insuficiente!");
+                
+            }else{
+                Console.WriteLine("O carro nao possui unidades em estoque.");
                 
             }
 
