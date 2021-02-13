@@ -10,7 +10,7 @@ namespace Exercicio1
         private int cpf;
         private int tel;
         private float saldo;
-        private List<Carro> garagem;
+        private List<Carro> garagem = new List<Carro>();
 
         public Comprador(){
 
@@ -29,6 +29,7 @@ namespace Exercicio1
         public static void addComprador(List<Comprador> compradores){
 
             Comprador comprador = new Comprador();
+            Carro auxCarro = new Carro();
 
             Console.WriteLine("Digite o primeiro nome: ");
             comprador.primeiroNome = Console.ReadLine();
@@ -47,9 +48,12 @@ namespace Exercicio1
                 Console.WriteLine("Digite o saldo: ");
                 comprador.saldo = float.Parse(Console.ReadLine());
 
-            }while(comprador.saldo < 0);
+                if(comprador.saldo < 0){
+                    Console.WriteLine("Insira um saldo válido.");
 
-            comprador.garagem.Add(null);
+                }
+
+            }while(comprador.saldo < 0);
 
             compradores.Add(comprador);
 
@@ -65,7 +69,6 @@ namespace Exercicio1
 
             Comprador auxComprador = buscaComprador(compradores);
 
-
             Console.WriteLine("Digite o modelo do carro: ");
             auxModelo = Console.ReadLine();
             Console.WriteLine("Digite o ano: ");
@@ -77,8 +80,8 @@ namespace Exercicio1
             opcao = Console.ReadLine();
 
             if(opcao == "Sim" && auxComprador.saldo >= carro.getPreco()){
-                auxComprador.garagem.Add(carro);
                 auxComprador.saldo -= carro.getPreco();
+                auxComprador.garagem.Add(carro);
                 compradores.Add(auxComprador);
                 Console.WriteLine("Carro adquirido!");
 
@@ -118,6 +121,34 @@ namespace Exercicio1
             }
 
             return null;
+        }
+
+        public static List<Comprador> atualizaComprador(List<Comprador> compradores, 
+            Comprador comprador){
+
+            int auxCpf = comprador.cpf;
+            
+            for(int i = 0; i < compradores.Count; i++){
+                if(compradores[i].cpf == auxCpf){
+                    compradores[i] = comprador;
+                    Console.WriteLine("Dados atualizados com sucesso!");
+                    Console.WriteLine("Apresentando novas informações...");
+                    Console.WriteLine("Nome completo: " + compradores[i].primeiroNome + " " 
+                    + compradores[i].sobreNome);
+                    Console.WriteLine("CPF: " + compradores[i].cpf);
+                    Console.WriteLine("Telefone: " + compradores[i].tel);
+                    Console.WriteLine("Saldo: " + compradores[i].saldo);
+
+
+                }else {
+                    Console.WriteLine("O comprador não se encontra na base de dados!");
+
+                }
+
+            }
+            
+            return compradores;
+
         }
         
     }
