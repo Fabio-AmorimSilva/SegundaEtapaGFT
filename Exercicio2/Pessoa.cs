@@ -5,9 +5,19 @@ namespace Exercicio2
         
         private string nome { get; set;}
 
+        public string Nome {
+            get => this.nome;
+            set => this.nome = value;
+        }
+
         private int id {get; set;}
 
-        public abstract double recebimento();
+        public int Id {
+            get => this.id;
+            set => this.id = value;
+        }
+
+        public abstract void Salario(double valor);
 
         private float tempo {get; set;}
 
