@@ -1,0 +1,16 @@
+/home/fabio/Documentos/Linguagens de Programação/.NET/Exercicios/Exercicio2/bin/Debug/net5.0/Exercicio2
+/home/fabio/Documentos/Linguagens de Programação/.NET/Exercicios/Exercicio2/bin/Debug/net5.0/Exercicio2.deps.json
+/home/fabio/Documentos/Linguagens de Programação/.NET/Exercicios/Exercicio2/bin/Debug/net5.0/Exercicio2.runtimeconfig.json
+/home/fabio/Documentos/Linguagens de Programação/.NET/Exercicios/Exercicio2/bin/Debug/net5.0/Exercicio2.runtimeconfig.dev.json
+/home/fabio/Documentos/Linguagens de Programação/.NET/Exercicios/Exercicio2/bin/Debug/net5.0/Exercicio2.dll
+/home/fabio/Documentos/Linguagens de Programação/.NET/Exercicios/Exercicio2/bin/Debug/net5.0/ref/Exercicio2.dll
+/home/fabio/Documentos/Linguagens de Programação/.NET/Exercicios/Exercicio2/bin/Debug/net5.0/Exercicio2.pdb
+/home/fabio/Documentos/Linguagens de Programação/.NET/Exercicios/Exercicio2/obj/Debug/net5.0/Exercicio2.csprojAssemblyReference.cache
+/home/fabio/Documentos/Linguagens de Programação/.NET/Exercicios/Exercicio2/obj/Debug/net5.0/Exercicio2.GeneratedMSBuildEditorConfig.editorconfig
+/home/fabio/Documentos/Linguagens de Programação/.NET/Exercicios/Exercicio2/obj/Debug/net5.0/Exercicio2.AssemblyInfoInputs.cache
+/home/fabio/Documentos/Linguagens de Programação/.NET/Exercicios/Exercicio2/obj/Debug/net5.0/Exercicio2.AssemblyInfo.cs
+/home/fabio/Documentos/Linguagens de Programação/.NET/Exercicios/Exercicio2/obj/Debug/net5.0/Exercicio2.csproj.CoreCompileInputs.cache
+/home/fabio/Documentos/Linguagens de Programação/.NET/Exercicios/Exercicio2/obj/Debug/net5.0/Exercicio2.dll
+/home/fabio/Documentos/Linguagens de Programação/.NET/Exercicios/Exercicio2/obj/Debug/net5.0/ref/Exercicio2.dll
+/home/fabio/Documentos/Linguagens de Programação/.NET/Exercicios/Exercicio2/obj/Debug/net5.0/Exercicio2.pdb
+/home/fabio/Documentos/Linguagens de Programação/.NET/Exercicios/Exercicio2/obj/Debug/net5.0/Exercicio2.genruntimeconfig.cache
