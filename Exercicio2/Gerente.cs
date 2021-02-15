@@ -16,7 +16,7 @@ namespace Exercicio2
             this.salario = valor * 1.5;
         }
 
-         public static void consultaFuncionario(List<Gerente> gerentes, int auxId){
+         public static void consultaGerente(List<Gerente> gerentes, int auxId){
 
             for(int i = 0; i < gerentes.Count; i++){
 
@@ -25,6 +25,27 @@ namespace Exercicio2
                     Console.WriteLine("Id: " + gerentes[i].Id);
                     Console.WriteLine("Salario: " + gerentes[i].salario);
                     Console.WriteLine();
+
+                }else{
+                    Console.WriteLine("O gerente não foi encontrado na nossa base de dados.");
+
+                }
+            }
+        }
+
+         public static void alteraGerente(List<Gerente> gerentes, int auxId){
+
+            for(int i = 0; i < gerentes.Count; i++){
+
+                if(gerentes[i].Id == auxId){
+                    Console.WriteLine("Dados do gerente ->");
+                    Console.WriteLine("Digite um novo nome: ");
+                    gerentes[i].Nome = Console.ReadLine();
+                    Console.WriteLine("Digite um novo Id: ");
+                    gerentes[i].Id = int.Parse(Console.ReadLine());
+                    Console.WriteLine("Digite um novo salario: ");
+                    gerentes[i].Salario(double.Parse(Console.ReadLine()));
+                    Console.WriteLine("");
 
                 }else{
                     Console.WriteLine("O gerente não foi encontrado na nossa base de dados.");

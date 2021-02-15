@@ -39,9 +39,23 @@ namespace Exercicio2
                     case 3:
                         Console.WriteLine("Digite o id: ");
                         auxId = int.Parse(Console.ReadLine());
-                        Gerente.consultaFuncionario(gerentes, auxId);
+                        Gerente.consultaGerente(gerentes, auxId);
                         Funcionario.consultaFuncionario(funcionarios, auxId);
                     break;
+                    case 4:
+                        Console.WriteLine("Digite o Id do funcionário: ");
+                        auxId = int.Parse(Console.ReadLine());
+                        Funcionario.alteraFuncionario(funcionarios, auxId);
+                        Funcionario.consultaFuncionario(funcionarios, auxId);
+                    break;
+                    case 5:
+                        Console.WriteLine("Digite o Id do gerente: ");
+                        auxId = int.Parse(Console.ReadLine());
+                        Gerente.alteraGerente(gerentes, auxId);
+                        Gerente.consultaGerente(gerentes, auxId);
+                    break;
+                    case 6:
+                    continue;
                     default:
                         Console.WriteLine("Digite uma opção válida!");
                     break;
@@ -49,7 +63,7 @@ namespace Exercicio2
 
                 opUsuario = Menu();
 
-            }while(opUsuario != 4);
+            }while(opUsuario != 6);
 
         }
 
@@ -62,7 +76,9 @@ namespace Exercicio2
             Console.WriteLine("1 - Adiciona funcionário.");
             Console.WriteLine("2 - Adiciona gerente.");
             Console.WriteLine("3 - Consulta identificação (Id).");
-            Console.WriteLine("4 - Sair");
+            Console.WriteLine("4 - Para alterar dados de funcionário.");
+            Console.WriteLine("5 - Para alterar dados de gerente.");
+            Console.WriteLine("6 - Sair.");
             op = int.Parse(Console.ReadLine());
 
             return op;
