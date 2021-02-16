@@ -21,6 +21,11 @@ namespace Exercicio2
 
         private float tempo {get; set;}
 
+        public float Tempo {
+            get => this.tempo;
+            set => this.tempo = value;
+        }
+
 
 
 

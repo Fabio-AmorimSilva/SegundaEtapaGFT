@@ -24,6 +24,8 @@ namespace Exercicio2
                         funcionario.Id = int.Parse(Console.ReadLine());
                         Console.WriteLine("Digite o salário do funcionário: ");
                         funcionario.Salario(double.Parse(Console.ReadLine()));
+                        Console.WriteLine("Digite o tempo de empresa do funcionário em anos: ");
+                        funcionario.Tempo = float.Parse(Console.ReadLine());
                         funcionarios.Add(funcionario);
                     break;
                     case 2:
@@ -34,6 +36,8 @@ namespace Exercicio2
                         gerente.Id = int.Parse(Console.ReadLine());
                         Console.WriteLine("Digite o salário do gerente: ");
                         gerente.Salario(double.Parse(Console.ReadLine()));
+                        Console.WriteLine("Digite o tempo de empresa do gerente em anos: ");
+                        gerente.Tempo = float.Parse(Console.ReadLine());
                         gerentes.Add(gerente);
                     break;
                     case 3:
@@ -64,6 +68,8 @@ namespace Exercicio2
                 opUsuario = Menu();
 
             }while(opUsuario != 6);
+
+            Console.WriteLine("Obrigado pela perferência. Volte sempre!");
 
         }
 

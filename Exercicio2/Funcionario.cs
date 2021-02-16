@@ -22,6 +22,7 @@ namespace Exercicio2
                     Console.WriteLine("Nome: " + funcionarios[i].Nome);
                     Console.WriteLine("Id: " + funcionarios[i].Id);
                     Console.WriteLine("Salario: " + funcionarios[i].salario);
+                    Console.WriteLine("Tempo de empresa: " + funcionarios[i].Tempo + " anos.");
                     Console.WriteLine();
 
                 }else{
@@ -42,6 +43,8 @@ namespace Exercicio2
                     funcionarios[i].Id = int.Parse(Console.ReadLine());
                     Console.WriteLine("Digite um novo salario: ");
                     funcionarios[i].Salario(double.Parse(Console.ReadLine()));
+                    Console.WriteLine("Digite o novo tempo de empresa: ");
+                    funcionarios[i].Tempo = float.Parse(Console.ReadLine());
                     Console.WriteLine("");
 
                 }else{
