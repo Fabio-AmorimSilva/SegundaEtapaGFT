@@ -22,23 +22,23 @@ namespace Exercicio3
                     case 1:
                         Console.WriteLine("Digite o tamanho do lado do quadrado: ");
                         auxLado = double.Parse(Console.ReadLine());
-                        Console.WriteLine("Área: " + quadrado.calculaAreaQ(auxLado));
+                        Console.WriteLine("Área: " + String.Format("{0:00.00}",quadrado.calculaAreaQ(auxLado)));
                     break;
                     case 2:
                         Console.WriteLine("Digite o tamanho do lado do quadrado e a quantidade de lados: ");
                         auxLado = double.Parse(Console.ReadLine());
                         auxLados = int.Parse(Console.ReadLine());
-                        Console.WriteLine("Perímetro: " + quadrado.calculaPerimetroQ(auxLado, auxLados));
+                        Console.WriteLine("Perímetro: " + String.Format("{0:00.00}",quadrado.calculaPerimetroQ(auxLado, auxLados)));
                     break;
                     case 3:
                         Console.WriteLine("Digite o tamanho do raio do círculo: ");
                         auxRaio = double.Parse(Console.ReadLine());
-                        Console.WriteLine("Área: " + circulo.calculaAreaC(auxRaio));
+                        Console.WriteLine("Área: " + String.Format("{0:00.00}",circulo.calculaAreaC(auxRaio)));
                     break;
                     case 4:
                         Console.WriteLine("Digite o tamanho do raio do círculo: ");
                         auxRaio = double.Parse(Console.ReadLine());
-                        Console.WriteLine("Perímetro: " + circulo.calculaPerimetroC(auxRaio));
+                        Console.WriteLine("Perímetro: " + String.Format("{0:00.00}",circulo.calculaPerimetroC(auxRaio)));
                     break;
                     case 5:
                     continue;
