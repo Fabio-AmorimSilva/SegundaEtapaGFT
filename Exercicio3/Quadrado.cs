@@ -1,6 +1,6 @@
 namespace Exercicio3
 {
-    public class Quadrado : IQuadrado
+    public class Quadrado : AreaCalculavel, PerimetroCalculavel
     {
 
         private double lado{get; set;}
@@ -11,13 +11,13 @@ namespace Exercicio3
 
         }
 
-        public double calculaAreaQ(double lado){
+        public double calculaArea(double lado){
             return lado * lado;
 
         }
 
-        public double calculaPerimetroQ(double lado, int quantidade){
-            return lado * quantidade;
+        public double calculaPerimetro(double lado){
+            return lado * 4;
 
         }
         

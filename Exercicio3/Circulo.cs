@@ -1,6 +1,6 @@
 namespace Exercicio3
 {
-    public class Circulo : ICirculo
+    public class Circulo : AreaCalculavel, PerimetroCalculavel
     {
         
         private double raio{get; set;}
@@ -11,13 +11,13 @@ namespace Exercicio3
 
         }
 
-         public double calculaAreaC(double raio){
+         public double calculaArea(double raio){
             return 3.14 * (raio * raio);
 
         }
 
-        public double calculaPerimetroC(double raio){
-            return (2 * 3.14) * raio;
+        public double calculaPerimetro(double raio){
+            return 2 * System.Math.PI * raio;
 
         }
 
